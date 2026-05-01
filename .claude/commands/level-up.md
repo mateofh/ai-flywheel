@@ -393,4 +393,4 @@ Bar characters: `█████` for 5/5, `████░` for 4/5, `███
 ---
 
 **Version:** 2.0.0
-**Created by:** Mateo Valenzuela
+**Created by:** Mateo Folador (https://linkedin.com/in/mateofh)
