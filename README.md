@@ -25,7 +25,15 @@ Works for **everyone** — from ChatGPT in the browser to autonomous agent swarm
 | 21-25 | **Founder Mode** | AI is infrastructure. Scheduled, autonomous, integrated everywhere. |
 | 26-30 | **Singularity** | AI manages AI. You set vision, AI builds toward it. |
 
-45% of users are Tourists. Less than 1% reach Singularity.
+## What's New in v2.1
+
+- **Vitality scoring** — measures actual usage (last 30 days), not just inventory. Hoarding skills no longer earns points.
+- **Radar chart** — visual dashboard with your scores vs reference benchmark.
+- **History tracking** — `/level-up --history` shows progression over time. Run it monthly to track your evolution.
+- **Dead weight detection** — surfaces skills not used in 90+ days, stale memory, MCPs without recent calls.
+- **Tier-specific deliverables** — Tourist gets a Starter Pack, Architect gets Pro Patterns, Founder Mode gets Frontier Challenges. Real value, not just CTA.
+- **Modernized Autonomy** — counts hooks, scheduled remote agents, sub-agent orchestration (not just legacy cron).
+- **Honest percentiles** — distribution stats are flagged as illustrative until v3.0 leaderboard ships.
 
 ## Install (Claude Code users)
 
@@ -39,35 +47,49 @@ Then run:
 /level-up
 ```
 
+### Modes
+
+```
+/level-up              Full assessment with dashboard
+/level-up --assess     Score only, no dashboard
+/level-up --history    Timeline of past runs
+/level-up --diff       What changed since last run
+/level-up --cleanup    Generate cleanup script for dead weight
+```
+
 ## Don't have Claude Code?
 
-Take the assessment on the web (coming soon): **aiflywheel.com/assess**
+Take the assessment on the web (coming soon in v3.0): **aiflywheel.com/assess**
 
 6 questions. 2 minutes. Same score.
 
 ## What You Get
 
-- **Score** across 5 dimensions (0-30)
-- **Tier** with percentile ranking
-- **Signature Workflow** — your most impressive automation highlighted
-- **Gap Analysis** — your weakest dimension + 3 steps to level up
-- **Dashboard** — HTML with visual breakdown
-- **Share Copy** — ready-to-paste LinkedIn/Twitter post
+- **Score** across 5 dimensions (0-30) — vitality-weighted, not gameable
+- **Radar chart** — your shape vs reference benchmark
+- **Tier** with progression vs your last run
+- **Signature Workflow** — data-driven from real invocations (last 30 days)
+- **Top 3 Workhorses** — your most-invoked skills with monthly counts
+- **Dead Weight** — skills/memory/MCPs to clean up
+- **Tier Deliverable** — concrete next-step bundle, not generic upsell
+- **Gap Analysis** — your weakest dimension + 3 specific steps
+- **Dashboard** — self-contained HTML on your Desktop
+- **Share Copy** — ready-to-paste with vitality stats
 
 ## Example
 
 ```
-Tier: Architect (22/30)
+Tier: Architect (22/30)  +4 since last run
 
-Context Depth:   ████░ 4/5
-Data Reach:      █████ 5/5
-Workflow Power:  █████ 5/5
-Output Quality:  ████░ 4/5
-Autonomy:        ████░ 4/5
+Context Depth:   ████░ 4/5 — 47/89 memory files touched in 30d
+Data Reach:      █████ 5/5 — 12/14 MCPs live
+Workflow Power:  █████ 5/5 — 38/103 skills active
+Output Quality:  ████░ 4/5 — 8 deliverable skills, brand QA active
+Autonomy:        ████░ 4/5 — 3 hook types + scheduled agents
 
-147 skills | 19 MCPs | 33 agents
+Signature: /cold-email-weekly — 23x in last 30 days
 
-What's your AI leverage?
+What's your AI flywheel?
 ```
 
 ## License
@@ -76,4 +98,4 @@ MIT
 
 ## Author
 
-https://www.linkedin.com/in/mateofh/?locale=en
+[Mateo Folador](https://www.linkedin.com/in/mateofh/?locale=en)
