@@ -76,4 +76,4 @@ MIT
 
 ## Author
 
-[Mateo Valenzuela](https://linkedin.com/in/mateovalenzuela)
+https://www.linkedin.com/in/mateofh/?locale=en
