@@ -95,6 +95,7 @@ What's your AI flywheel?
 
 MIT
 
+
 ## Author
 I work with companies helping them grow their operations laveraging AI with vertical implementations and consulting 
 Mateo Folador](https://www.linkedin.com/in/mateofh/
@@ -102,5 +103,5 @@ Mateo Folador](https://www.linkedin.com/in/mateofh/
 
 ## you may also could check David Arnoux (GenAI Circle, MIT License)
 This assesment was orignaly Inspired by /level-up by David Arnoux (GenAI Circle, MIT License).                                             Heavily modified: rebranded as AI Flywheel, replaced binary 11-level                                                                    system with 5-dimension × 6-tier rubric, to get more balaced resultas  added run history + diff.
-
+(# Forked from /level-up by David Arnoux (MIT) — heavily modified)
 
