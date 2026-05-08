@@ -59,9 +59,8 @@ Then run:
 
 ## Don't have Claude Code?
 
-Take the assessment on the web (coming soon in v3.0): **aiflywheel.com/assess**
+Take the assessment on the web (coming soon in v3.0): **samurai8.ai**
 
-6 questions. 2 minutes. Same score.
 
 ## What You Get
 
@@ -97,7 +96,7 @@ What's your AI flywheel?
 MIT
 
 ## Author
-
-[Mateo Folador](https://www.linkedin.com/in/mateofh/?locale=en)
+I work with companies helping them grow their operations laveraging AI with vertical implementations and consulting 
+Mateo Folador](https://www.linkedin.com/in/mateofh/
 
 
