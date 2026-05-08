@@ -2,7 +2,7 @@
 
 Measure how much work your AI can do without you.
 
-Works for **everyone** — from ChatGPT in the browser to autonomous agent swarms. 5 dimensions, 30 points, 6 tiers.
+Works for **everyone** —  5 dimensions, 30 points, 6 tiers.
 
 ## The 5 Dimensions
 
@@ -19,7 +19,7 @@ Works for **everyone** — from ChatGPT in the browser to autonomous agent swarm
 | Score | Tier | Who This Is |
 |-------|------|-------------|
 | 0-5 | **Tourist** | Using AI like Google. Ask, get answer, move on. |
-| 6-10 | **Power User** | Customized AI with GPTs or Projects. Better output, still manual. |
+| 6-10 | **Power User** | Customized AI . Better output, still manual. |
 | 11-15 | **Operator** | AI executes workflows. Connected to your data. You direct, AI does. |
 | 16-20 | **Architect** | AI is a team. Complex systems, sub-agents, quality gates. |
 | 21-25 | **Founder Mode** | AI is infrastructure. Scheduled, autonomous, integrated everywhere. |
@@ -99,3 +99,5 @@ MIT
 ## Author
 
 [Mateo Folador](https://www.linkedin.com/in/mateofh/?locale=en)
+
+
