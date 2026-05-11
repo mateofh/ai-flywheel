@@ -29,7 +29,7 @@ Works for **everyone** —  5 dimensions, 30 points, 6 tiers.
 
 - **Vitality scoring** — measures actual usage (last 30 days), not just inventory. Hoarding skills no longer earns points.
 - **Radar chart** — visual dashboard with your scores vs reference benchmark.
-- **History tracking** — `/level-up --history` shows progression over time. Run it monthly to track your evolution.
+- **History tracking** — `/flywheel --history` shows progression over time. Run it monthly to track your evolution.
 - **Dead weight detection** — surfaces skills not used in 90+ days, stale memory, MCPs without recent calls.
 - **Tier-specific deliverables** — Tourist gets a Starter Pack, Architect gets Pro Patterns, Founder Mode gets Frontier Challenges. Real value, not just CTA.
 - **Modernized Autonomy** — counts hooks, scheduled remote agents, sub-agent orchestration (not just legacy cron).
@@ -38,23 +38,36 @@ Works for **everyone** —  5 dimensions, 30 points, 6 tiers.
 ## Install (Claude Code users)
 
 ```bash
-mkdir -p ~/.claude/commands && curl -sL https://raw.githubusercontent.com/mateofh/ai-flywheel/main/.claude/commands/level-up.md -o ~/.claude/commands/level-up.md
+mkdir -p ~/.claude/commands && curl -sL https://raw.githubusercontent.com/mateofh/ai-flywheel/main/.claude/commands/flywheel.md -o ~/.claude/commands/flywheel.md
 ```
 
 Then run:
 
 ```
-/level-up
+/flywheel
 ```
+
+### Migrating from `/level-up`
+
+If you installed this when the command was called `/level-up`, run:
+
+```bash
+rm ~/.claude/commands/level-up.md
+curl -sL https://raw.githubusercontent.com/mateofh/ai-flywheel/main/.claude/commands/flywheel.md \
+  -o ~/.claude/commands/flywheel.md
+```
+
+Your run history at `~/.config/ai-flywheel/runs/` is preserved — `/flywheel --history`
+still shows past assessments.
 
 ### Modes
 
 ```
-/level-up              Full assessment with dashboard
-/level-up --assess     Score only, no dashboard
-/level-up --history    Timeline of past runs
-/level-up --diff       What changed since last run
-/level-up --cleanup    Generate cleanup script for dead weight
+/flywheel              Full assessment with dashboard
+/flywheel --assess     Score only, no dashboard
+/flywheel --history    Timeline of past runs
+/flywheel --diff       What changed since last run
+/flywheel --cleanup    Generate cleanup script for dead weight
 ```
 
 ## Don't have Claude Code?
