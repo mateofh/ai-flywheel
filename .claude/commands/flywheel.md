@@ -7,11 +7,11 @@ description: AI Flywheel — measure how much work your AI can do without you
 Measure how much work your AI can do without you. Works for everyone — from ChatGPT in the browser to autonomous agent swarms.
 
 **Usage:**
-- `/level-up` — Full assessment: scan + score + dashboard + share copy
-- `/level-up --assess` — Score only, no dashboard
-- `/level-up --history` — Show timeline of past runs
-- `/level-up --diff` — Show what changed since last run
-- `/level-up --cleanup` — Generate cleanup script for dead skills/stale memory
+- `/flywheel` — Full assessment: scan + score + dashboard + share copy
+- `/flywheel --assess` — Score only, no dashboard
+- `/flywheel --history` — Show timeline of past runs
+- `/flywheel --diff` — Show what changed since last run
+- `/flywheel --cleanup` — Generate cleanup script for dead skills/stale memory
 
 ---
 
@@ -252,7 +252,7 @@ For Autonomy gap: point to their existing /schedule or hooks they could activate
 - [N] memory files not touched in 90+ days
 - [N] MCPs configured but no tool calls in last 30 days: [names]
 
-→ Run `/level-up --cleanup` to archive dead skills and review stale memory.
+→ Run `/flywheel --cleanup` to archive dead skills and review stale memory.
 ```
 
 If counts are zero or very low, skip this section entirely.
@@ -593,7 +593,7 @@ Use class `s0` through `s5` matching the score.
     <li>{{N}} memory files stale (>90d): use mtime to surface</li>
     <li>{{N}} MCPs configured but no recent calls: {{LIST}}</li>
   </ul>
-  <div class="cleanup-cta">→ Run <code>/level-up --cleanup</code> to archive dead skills.</div>
+  <div class="cleanup-cta">→ Run <code>/flywheel --cleanup</code> to archive dead skills.</div>
 </div>
 ```
 If everything is fresh, omit this section entirely (`{{CLEANUP_SECTION}}` = empty).
@@ -683,7 +683,7 @@ Each tier gets a CONCRETE deliverable in the dashboard. Render in `.deliverable`
   2. Autonomous content motion (monitor → ideate → produce → publish)
   3. Multi-agent CRM (agents managing leads end-to-end)
   
-  Prize: First 10 to ship a working autonomous loop get featured in the next /level-up release.
+  Prize: First 10 to ship a working autonomous loop get featured in the next /flywheel release.
 
 ### CTA by Tier (small, secondary to deliverable)
 - **Tier 1-2:** "Want a guided path? My 8-week program takes you from Tourist to Operator."
@@ -701,7 +701,7 @@ These are estimates based on observed Claude Code adoption patterns — NOT meas
 
 ## Flag Modes
 
-### `/level-up --history`
+### `/flywheel --history`
 Read all JSON files in `~/.config/ai-flywheel/runs/` and render a timeline:
 ```
 Run 1 — 2026-02-15 — Tier 3 Operator (14/30)
@@ -710,14 +710,14 @@ Run 3 — 2026-05-01 — Tier 5 Founder Mode (24/30) [+6]
 ```
 Plus simple ASCII chart of total over time. No dashboard.
 
-### `/level-up --diff`
+### `/flywheel --diff`
 Compare last 2 runs:
 - Skills added/removed
 - MCPs added/removed
 - Score changes per dimension
 - Active skills changes (some skills became dormant, others activated)
 
-### `/level-up --cleanup`
+### `/flywheel --cleanup`
 Generate (don't execute) a cleanup script:
 ```bash
 # ~/Desktop/ai-flywheel-cleanup.sh
