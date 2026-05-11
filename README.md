@@ -47,6 +47,19 @@ Then run:
 /flywheel
 ```
 
+### Migrating from `/level-up`
+
+If you installed this when the command was called `/level-up`, run:
+
+```bash
+rm ~/.claude/commands/level-up.md
+curl -sL https://raw.githubusercontent.com/mateofh/ai-flywheel/main/.claude/commands/flywheel.md \
+  -o ~/.claude/commands/flywheel.md
+```
+
+Your run history at `~/.config/ai-flywheel/runs/` is preserved — `/flywheel --history`
+still shows past assessments.
+
 ### Modes
 
 ```
