@@ -424,6 +424,9 @@ ALWAYS generate and open an HTML dashboard.
   .cta { text-align: center; padding: 32px; border: 1px solid #222; background: #111; margin-bottom: 48px; }
   .cta-title { font-size: 16px; color: #fff; margin-bottom: 8px; font-weight: 700; }
   .cta-text { font-size: 14px; color: #bbb; line-height: 1.6; }
+  .wa-btn { display: inline-block; margin-top: 20px; padding: 14px 28px; background: #25D366; color: #fff; text-decoration: none; font-size: 14px; font-weight: 700; letter-spacing: 0.5px; border: 1px solid #25D366; transition: all 0.15s; }
+  .wa-btn:hover { background: #1ebe57; border-color: #1ebe57; }
+  .wa-btn::before { content: "▶ "; font-size: 11px; }
   .footer { text-align: center; padding-top: 24px; border-top: 1px solid #1a1a1a; color: #333; font-size: 11px; }
   .footer a { color: #555; text-decoration: none; } .footer a:hover { color: #f59e0b; }
   .disclaimer { font-size: 10px; color: #444; line-height: 1.5; max-width: 600px; margin: 0 auto 24px; text-align: center; font-style: italic; }
@@ -506,11 +509,12 @@ ALWAYS generate and open an HTML dashboard.
   <div class="cta">
     <div class="cta-title">{{CTA_TITLE}}</div>
     <div class="cta-text">{{CTA_TEXT}}</div>
+    <a class="wa-btn" href="https://wa.me/573115890785?text=Hola%20Mateo%2C%20quiero%20pasar%20de%20nivel%20con%20Claude%20Code" target="_blank" rel="noopener">Quiero pasar de nivel con Claude Code</a>
   </div>
 
   <div class="disclaimer">Distribution percentiles shown are estimates from observed Claude Code adoption patterns. Real percentiles will be available once the leaderboard launches in v3.0.</div>
 
-  <div class="footer">AI Flywheel v2.1<br><a href="https://github.com/mateofh/ai-flywheel">github.com/mateofh/ai-flywheel</a></div>
+  <div class="footer">AI Flywheel v2.1<br><a href="https://github.com/mateofh/ai-flywheel">github.com/mateofh/ai-flywheel</a> · <a href="https://www.linkedin.com/in/mateofh/" target="_blank" rel="noopener">LinkedIn: Mateo Folador</a></div>
 </div>
 <script>
 function copyShare(btn) {
